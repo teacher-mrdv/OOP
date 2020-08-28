@@ -1,5 +1,6 @@
+import java.util.Date;
 
-public class Animal
+public abstract class Animal
 {
 	// Attributes/Fields/Instance variables/Properties
 	private String name;
@@ -36,9 +37,16 @@ public class Animal
 		this.yearOfBirth = yearOfBirth;
 	}
 
+	public int getAge()
+	{
+		Date today = new Date();
+		int currentYear = today.getYear();
+		return currentYear - this.yearOfBirth;
+	}
+	
 	// polymorphism
-//	public String toString()
-//	{
-//		return this.name + "\t" + this.yearOfBirth;
-//	}
+	public String toString()
+	{
+		return this.name + "\t" + this.yearOfBirth;
+	}
 }
