@@ -9,6 +9,10 @@ public abstract class Animal
 	// constructors
 	public Animal()
 	{
+		Date today = new Date();
+		int currentYear = 1900 + today.getYear();
+		this.name = "unnamed";
+		this.yearOfBirth = currentYear;
 	}
 
 	public Animal(String name, int yearOfBirth)
@@ -40,13 +44,18 @@ public abstract class Animal
 	public int getAge()
 	{
 		Date today = new Date();
-		int currentYear = today.getYear();
+		int currentYear = 1900 + today.getYear();
 		return currentYear - this.yearOfBirth;
 	}
+	
+	// abstract forces us to write (and override) the method in the subclass(es)
+	public abstract void talk();
 	
 	// polymorphism
 	public String toString()
 	{
-		return this.name + "\t" + this.yearOfBirth;
+		String s = "Name:" + this.name + "\tYoB: " +
+					this.yearOfBirth + "\tAge: " + this.getAge();
+		return s;
 	}
 }
