@@ -30,7 +30,7 @@ public class Dog extends Animal
 	// another silly example of polymorphism.
 	public void talk()
 	{
-		System.out.println("Bow wow wow");
+		System.out.println("Bow wow");
 	}
 	
 	// overriding toString() in Animal (polymorphism)
