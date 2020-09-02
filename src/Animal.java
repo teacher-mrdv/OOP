@@ -1,4 +1,6 @@
-// NOTE: Abstract classes cannot be instantiated!
+/*
+ *  NOTE: Abstract classes cannot be instantiated!
+ */
 import java.util.Date;
 
 public abstract class Animal
@@ -7,7 +9,8 @@ public abstract class Animal
 	private String name;
 	private int yearOfBirth;
 
-	// constructors
+	// constructors (example of overloading)
+	// java.util.Date is a deprecated class (obsolete)
 	public Animal()
 	{
 		Date today = new Date();
