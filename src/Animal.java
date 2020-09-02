@@ -1,4 +1,4 @@
-// Abstract classes cannot be instantiated!
+// NOTE: Abstract classes cannot be instantiated!
 import java.util.Date;
 
 public abstract class Animal
