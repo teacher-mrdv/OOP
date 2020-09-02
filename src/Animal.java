@@ -1,3 +1,4 @@
+// Abstract
 import java.util.Date;
 
 public abstract class Animal
