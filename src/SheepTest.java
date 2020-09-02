@@ -1,4 +1,4 @@
-// test class for Sheep
+// test/controller class for Sheep
 public class SheepTest
 {
 
