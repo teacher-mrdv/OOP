@@ -1,4 +1,5 @@
 /*
+ *	Class example mrdv
  *  NOTE: Abstract classes cannot be instantiated!
  */
 import java.util.Date;
