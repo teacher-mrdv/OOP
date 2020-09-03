@@ -1,4 +1,9 @@
 /*
+ * This class is all commented out because
+ * the Animal class was made ABSTRACT,
+ * and therefore cannot be instantiated (lines 12~14,18,etc.)
+ *  
+
 
 public class AnimalTest
 {
