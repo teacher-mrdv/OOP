@@ -1,2 +1,2 @@
 # OOP1
-OOP class example (Java)
+OOP class examples (Java)
