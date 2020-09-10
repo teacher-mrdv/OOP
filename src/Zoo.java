@@ -5,7 +5,10 @@ public class Zoo
 	ArrayList<Animal> population;
 	private String zooName;
 	
-	public Zoo() { }
+	public Zoo()
+	{
+		this.population = new ArrayList<Animal>();
+	}
 	
 	public Zoo(String zooName, ArrayList<Animal> population)
 	{
