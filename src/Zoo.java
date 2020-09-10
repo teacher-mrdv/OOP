@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Zoo
 {
+	// aggregation example: Zoo has-a Animal
 	ArrayList<Animal> population;
 	private String zooName;
 	
