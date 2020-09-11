@@ -53,6 +53,7 @@ public class Sheep extends Animal
 	
 	public void setSheered(char sheered)
 	{
+		sheered = Character.toLowerCase(sheered);
 		if( sheered == 'Y')
 		{
 			this.setSheered(true);

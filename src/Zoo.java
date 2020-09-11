@@ -26,6 +26,17 @@ public class Zoo
 		this.zooName = zooName;
 	}
 	
+	public boolean kill(int index)
+	{
+		if( index >= 0 && index < this.population.size() )
+		{
+			this.population.remove(index);
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
 	public String toString()
 	{
 		String output = "Zoo name: " + this.zooName + "\n";
