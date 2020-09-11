@@ -31,7 +31,8 @@ public class Zoo
 		String output = "Zoo name: " + this.zooName + "\n";
 		for(int i = 0; i < this.population.size(); i++)
 		{
-			output = output + this.population.get(i).toString() + "\n";
+			output = i + ": " + output +
+				this.population.get(i).toString() + "\n";
 		}
 		return output;
 	}
