@@ -12,6 +12,8 @@ public class ZooTest
 		alist.add(pet);
 		pet = new Dog("Bibi", 2012, "Lisa");
 		alist.add(pet);
+		Sheep baah = new Sheep("Beba", 2009, false);
+		alist.add(baah);
 		Zoo loco = new Zoo("Loco", alist);
 		System.out.println(loco);
 

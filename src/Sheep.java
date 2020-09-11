@@ -23,6 +23,12 @@ public class Sheep extends Animal
 			this.setSheered(false);
 		}
 	}
+	
+	public Sheep(String name, int yearOfBirth, boolean sheered)
+	{
+		super(name, yearOfBirth);
+		this.sheered = sheered;
+	}
 
 	// is- methods return booleans ONLY
 	public boolean isSheered()
