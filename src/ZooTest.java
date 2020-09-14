@@ -2,7 +2,13 @@ import java.util.*;
 
 public class ZooTest
 {
-
+	public int findName(String name)
+	{
+		int index = -1;
+		
+		return index;
+	}
+	
 	public static void main(String[] args)
 	{
 		ArrayList<Animal> alist = new ArrayList<Animal>();
