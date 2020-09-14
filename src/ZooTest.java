@@ -2,6 +2,7 @@ import java.util.*;
 
 public class ZooTest
 {
+	// find by name, returns index of name or -1
 	public static int findName(ArrayList<Animal> animalList, String name)
 	{
 		int index = -1;
