@@ -4,7 +4,7 @@
  */
 import java.util.Date;
 
-public abstract class Animal
+public class Animal
 {
 	// Attributes/Fields/Instance variables/Properties
 	private String name;
@@ -54,7 +54,10 @@ public abstract class Animal
 	}
 	
 	// abstract forces us to write (and override) the method in the subclass(es)
-	public abstract void talk();
+	public void talk()
+	{
+		System.out.println("Animals don't talk");
+	}
 	
 	// polymorphism
 	public String toString()

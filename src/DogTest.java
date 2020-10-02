@@ -15,7 +15,11 @@ public class DogTest
 		System.out.println(newPet);
 		newPet.setName("Snoopy");
 		System.out.println(newPet.toString());
-
+		
+		Dog test = new Dog("Baal", 2016, "Butcher");
+		System.out.println("\n" + test);
+		Animal caco = (Animal)test;
+		System.out.println(caco);
 	}
 
 }
