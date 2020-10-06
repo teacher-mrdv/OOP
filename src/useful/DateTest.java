@@ -55,7 +55,7 @@ public class DateTest
         do
         {
             error = false;
-            System.out.print("Input a date (DD/MM/YY) <testing String to Date> ");
+            System.out.print("Input a date (DD/MM/YYYY) <testing String to Date> ");
             String dateString1 = input.nextLine();
             if(Date.isValidDate(dateString1))
             {   Date inputDate1 = Date.stringToDate(dateString1);
@@ -71,7 +71,7 @@ public class DateTest
             error = false;
             try
             {
-                System.out.print("Input a date (DD/MM/YY) <testing Date(String) constructor> ");
+                System.out.print("Input a date (DD/MM/YYYY) <testing Date(String) constructor> ");
                 String dateString2 = input.nextLine();
                 Date inputDate2 = new Date(dateString2);
                 System.out.println(inputDate2);
