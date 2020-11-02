@@ -13,7 +13,8 @@ public class DateTest
         /*		System.out.println(date1.compareTo(date2)); //NEGATIVE when d1 < d2
 		System.out.println(date2.compareTo(date1)); //POSITIVE when d1 > d2
 		System.out.println(date2.compareTo(date2)); //ZERO when equal
-         */ System.out.println(d1.differenceInDays(d2));
+         */
+        System.out.println(d1.differenceInDays(d2));
     }
 
     public static void main(String args[]) throws Exception
@@ -50,6 +51,7 @@ public class DateTest
         System.out.print(">>> Validating date 30/2/2018 (false): ");
         System.out.println(Date.isValidDate(30, 2, 2018));
 
+        // validation using do-while loop only
         boolean error;
         Scanner input = new Scanner(System.in);
         do
@@ -66,6 +68,7 @@ public class DateTest
             }
         } while (error);
         
+        // validation using do-while loop and exceptions
         do
         {
             error = false;
