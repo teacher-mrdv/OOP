@@ -56,7 +56,7 @@ public class Line
 	}
 	
 	// quick test, should be in its own LineTest.java, but
-	// it's meant to be a quick hack job, so whatever
+	// it's meant to be a quick hack job, so ...
 	public static void main(String[] args)
 	{
 		Point p1 = new Point();
