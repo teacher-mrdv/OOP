@@ -72,11 +72,22 @@ public class Book
 	{
 		this.edition = edition;
 	}
+
 	
+	/*
+	public String toString() {
+		return "Book [isbn=" + isbn + ", author=" + author + ", title=" + title + ", edition=" + edition + "]";
+	}
+	*/
+	
+	@Override
 	public String toString()
 	{
 		return  "ISBN: " + this.isbn + "\nTitle: " + this.title +
 				"Edition: " + this.edition + "\nAuthor: " + this.author;
 	}
+	
+	
+	
 	
 }
