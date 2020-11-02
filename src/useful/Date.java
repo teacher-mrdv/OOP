@@ -56,7 +56,8 @@ public class Date
             scanner.close();
         } catch (Exception e)
         {
-            System.out.println(e.getMessage());
+            //System.out.println(e.getMessage());
+        	throw new Exception("Invalid date");
         }
         if (isValidDate(d, m, y))
         {
@@ -245,7 +246,7 @@ public class Date
     }
 
     // overloading
-    public static boolean isValidDate(String dateString)
+    public static boolean isValidDate(String dateString) throws Exception
     {
         int d = 0, m = 0, y = 0;
         dateString = dateString.replace('/', ' ');
@@ -258,7 +259,8 @@ public class Date
         } catch (Exception e)
         {
         	scanner.close();
-            System.out.println(e.getMessage());
+            //System.out.println(e.getMessage());
+        	throw new Exception("Invalid date");
         }
         scanner.close();
         return (isValidYear(y) && isValidMonth(m) && isValidDay(d, m, y));

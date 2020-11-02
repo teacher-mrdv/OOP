@@ -51,7 +51,7 @@ public class DateTest
         System.out.print(">>> Validating date 30/2/2018 (false): ");
         System.out.println(Date.isValidDate(30, 2, 2018));
 
-        // validation using do-while loop only ---
+        // validations using do-while loops and exceptions ---
         boolean error;
         Scanner input = new Scanner(System.in);
         do
@@ -68,7 +68,8 @@ public class DateTest
             }
         } while (error);
         
-        // validation using do-while loop and exceptions ---
+        // validation using do-while loop
+        Date inputDate2 = new Date();
         do
         {
             error = false;
@@ -76,14 +77,14 @@ public class DateTest
             {
                 System.out.print("Input a date (DD/MM/YYYY) <testing Date(String) constructor> ");
                 String dateString2 = input.nextLine();
-                Date inputDate2 = new Date(dateString2);
-                System.out.println(inputDate2);
+                inputDate2 = new Date(dateString2);
             } catch (Exception e)
             {
                 System.out.println(e.getMessage());
                 error = true;
             }
         } while (error);
+        System.out.println(inputDate2);
         input.close();
     }
 }
