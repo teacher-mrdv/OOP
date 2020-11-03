@@ -1,6 +1,6 @@
 /*
  * Date class
- * by mdv 2016, 2019
+ * by mdv 2016, 2019, 2020
  * 
  * TESTING STRONGLY RECOMMENDED-NO WARRANTIES!!!
  * 
@@ -11,7 +11,22 @@
  * http://javabeginnerstutorial.com/code-base/how-to-calculate-between-two-dates-in-java/
  * using Java's built-in classes
  */
+
 package useful;
+
+/*
+ * Date class
+ * by mdv 2016, 2019, 2020
+ * 
+ * TESTING STRONGLY RECOMMENDED-NO WARRANTIES!!!
+ * 
+ * Ideas taken from
+ * http://www.java2s.com/Tutorial/Java/0040__Data-Type/Getcurrentdateyearandmonth.htm
+ * http://www.sunshine2k.de/articles/coding/datediffindays/calcdiffofdatesindates.html
+ * the other way would be...
+ * http://javabeginnerstutorial.com/code-base/how-to-calculate-between-two-dates-in-java/
+ * using Java's built-in classes
+ */
 
 import java.util.*;
 
@@ -56,8 +71,7 @@ public class Date
             scanner.close();
         } catch (Exception e)
         {
-            //System.out.println(e.getMessage());
-        	throw new Exception("Invalid date");
+        	throw new Exception("Invalid date format");
         }
         if (isValidDate(d, m, y))
         {
@@ -145,13 +159,7 @@ public class Date
 
     public static Date stringToDate(String dateString) throws Exception
     {
-        dateString = dateString.replace('/', ' ');
-        Scanner scanner = new Scanner(dateString);
-        int d = scanner.nextInt();
-        int m = scanner.nextInt();
-        int y = scanner.nextInt();
-        Date date = new Date(d, m, y);
-        scanner.close();
+        Date date = new Date(dateString);
         return date;
     }
 
@@ -169,7 +177,8 @@ public class Date
         except for years that are exactly divisible by 100,
         but these centurial years are leap years, if they are exactly divisible by 400.
        For example, the years 1700, 1800, and 1900 were not leap years,
-        but the years 1600 and 2000 were. */
+        but the years 1600 and 2000 were.
+    */
     public static boolean isLeapYear(int year)
     {
         boolean divisibleBy4 = (year % 4 == 0);
@@ -256,13 +265,11 @@ public class Date
             d = scanner.nextInt();
             m = scanner.nextInt();
             y = scanner.nextInt();
+            scanner.close();
         } catch (Exception e)
         {
-        	scanner.close();
-            //System.out.println(e.getMessage());
-        	throw new Exception("Invalid date");
+            throw new Exception("Invalid date format");
         }
-        scanner.close();
         return (isValidYear(y) && isValidMonth(m) && isValidDay(d, m, y));
     }
 

@@ -61,7 +61,7 @@ public class DateTest
             String dateString1 = input.nextLine();
             if(Date.isValidDate(dateString1))
             {   Date inputDate1 = Date.stringToDate(dateString1);
-                System.out.println(inputDate1 + " <testing Date.isValidDate(String)>");
+                System.out.println(inputDate1);
             } else {
                 error = true;
                 System.out.println("Invalid date <testing Date.isValidDate(String)>");
